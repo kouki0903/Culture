@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>混雑状況把握サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>混雑状況把握サイト</h1>
+    <ul id="location-list">
+        <!-- 固定された場所リスト -->
+        <li>
+            レストランA - 混雑状況: 
+            <input type="checkbox" id="location-1">
+            <button onclick="updateCrowdStatus(1)">送信</button>
+        </li>
+        <li>
+            カフェB - 混雑状況: 
+            <input type="checkbox" id="location-2">
+            <button onclick="updateCrowdStatus(2)">送信</button>
+        </li>
+        <!-- 他の場所も同様に追加 -->
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>
